@@ -310,7 +310,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>Изначальное положение не имеет значения для статических объектов. It is constant throughout an app. If an object changes elevation, it should return to its resting elevation as soon as possible.</p>
+    <p>Для статических объектов изначальное положение высоты остаётся неизменным в течении всей работы приложения. Если объект отошёл от своего изначального положения высоты, он должен вернуться к нему как можно скорее.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -326,7 +326,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>The resting elevation for a given component type is consistent across apps throughout a platform. However, that same component type may have different resting elevations from platform to platform depending on the depth of the environment (e.g., TV has a greater depth than mobile or desktop).</p>
+    <p>Изначальное положение высоты для каждого типа компонента одинаково внутри приложений и в рамках платформы. Иначе говоря один и тот же тип компонентов может иметь различные изначальные положения высот на разных платформах зависящий от глубины пространства (например глубина пространства телевизора больше чем у мобильного телефона или настольного компьютера).</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -341,7 +341,7 @@
         </div>
               <div>
             <section class="moduleB1">
-          <h3>Responsive elevation and dynamic elevation offsets</h3>
+          <h3>Отзывчивое положение высоты и динамический отступ по высоте</h3>
         <div class="module-body">
       
     </div>
@@ -351,7 +351,7 @@
               <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>Certain component types have responsive elevation, which means they change their elevation in response to user input or system events. Different component states (e.g., normal, focused, pressed) may result in varying elevation changes, which are consistently implemented using dynamic elevation offsets.</p><p>Dynamic elevation offsets are relative to the resting state of the component, and act as the goal or target elevation for the component to move towards for a given component state. They also ensure that elevation changes for a given action are consistent across a component type. For example, all components that lift on press have the same elevation change, relative to their current/resting elevation.</p><p>Once the input event is completed or cancelled, the component will return to its resting elevation.</p>
+    <p>Некоторые типы компонентов имеют отзывчивое положение по высоте. Это означает, что они изменяют своё положение по z оси в ответ на действия пользователя или системные события. Различные состояния элементов (например обычное, активное или нажатое) могут иметь различные положения по высоте, что достигается с помощью сдвигов по высоте.</p><p>Dynamic elevation offsets are relative to the resting state of the component, and act as the goal or target elevation for the component to move towards for a given component state. They also ensure that elevation changes for a given action are consistent across a component type. For example, all components that lift on press have the same elevation change, relative to their current/resting elevation.</p><p>Once the input event is completed or cancelled, the component will return to its resting elevation.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
