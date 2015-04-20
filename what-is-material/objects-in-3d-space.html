@@ -368,7 +368,7 @@
             <section class="moduleB1">
           <h3>Функциональная тень</h3>
         <div class="module-body">
-      <p>Тени дают визуальную подсказку о положении объектов в пространстве. Тень является единственным указателем на расстояние между объектами по высоте, а внешний вид тени определяется положением объекта.</p>
+      <p>Тени дают визуальную подсказку о положении объектов в пространстве. Тень является единственным указателем на разницу положения по высоте между объектами, поэтому внешний вид тени определяется положением объекта.</p>
     </div>
   </section>
 
@@ -382,7 +382,7 @@
                           <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7XzNPLWJJYWw4ZVk/whatismaterial_3d_elevation_shadow1.png" />
                       </div>
                         <figcaption>
-          <div class="caption-title"></div><p>Without a shadow, there is nothing to indicate that the floating action button is a separate surface from the background surfaces.</p>
+          <div class="caption-title"></div><p>Без тени нет возможности показать, что плвающая кнопка действия отдельна от поверхности фона.</p>
         </figcaption>
                 </figure>
             <figure class="">
@@ -390,7 +390,7 @@
                           <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B8v7jImPsDi-eGtOTkZLLWpJbXc/whatismaterial_3d_elevation_shadow2.png" />
                       </div>
                         <figcaption>
-          <div class="caption-title"></div><p>Crisp shadows indicate both the floating action button and the app bar are separate surfaces very close to the background surface.</p>
+          <div class="caption-title"></div><p>В ситуации с жёсткой тенью плавающая кнопка и пнаель приложения выглядят так, как будто они оба находятся близко к фону.</p>
         </figcaption>
                 </figure>
             <figure class="">
@@ -398,7 +398,7 @@
                           <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0B8v7jImPsDi-RmRfeDNPVnFld0U/whatismaterial_3d_elevation_shadow3.png" />
                       </div>
                         <figcaption>
-          <div class="caption-title"></div><p>Softer, larger shadows indicate the floating action button is at a higher elevation than the app bar.</p>
+          <div class="caption-title"></div><p>Мягкие большие тени показывают, что плавающая кнопка находится на более высокой позиции, чем панель приложения.</p>
         </figcaption>
                 </figure>
           </div>
@@ -408,7 +408,7 @@
               <div>
             <section class="moduleB1">
         <div class="module-body">
-      <p>In motion, shadows also provide cues about an object’s direction of movement. This is another useful tool to indicate whether the distance between surfaces is increasing or decreasing.</p>
+      <p>При перемещении, тени подсказывают направление движения объекта — это ещё один способ определить увеличивается ли расстояние между поверхностями объекта или уменьшается.</p>
     </div>
   </section>
 
@@ -422,7 +422,7 @@
                           <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7aWUtM3dURkhiWk0/whatismaterial_3d_elevation_shadow4.png" />
                       </div>
                         <figcaption>
-          <div class="caption-title"></div><p>Without a shadow to indicate elevation, it’s unclear whether this circle is scaling at the same elevation, or simply increasing its elevation.</p>
+          <div class="caption-title"></div><p>Когда объект не отбрасывает тень становится непонятно — он увеличивается из за того, что меняет высоту или просто растёт в размерах.</p>
         </figcaption>
                 </figure>
             <figure class="">
@@ -430,7 +430,7 @@
                           <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7N2JJbC1QeC1vZUU/whatismaterial_3d_elevation_shadow5.png" />
                       </div>
                         <figcaption>
-          <div class="caption-title"></div><p>The shadow grows softer and larger as the object’s elevation increases and grows crisper and smaller as the elevation decreases.</p>
+          <div class="caption-title"></div><p>Тень становится мягче и больше, когда объект поднимается вверх, а когда он опускается тень становится  более чёткой но уменьшается в размерах.</p>
         </figcaption>
                 </figure>
             <figure class="">
@@ -438,7 +438,7 @@
                           <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7eEtZRWpCTGVxa1U/whatismaterial_3d_elevation_shadow6.png" />
                       </div>
                         <figcaption>
-          <div class="caption-title"></div><p>In this case, the consistent shadow helps the user understand that the object is changing shape as opposed to changing elevation.</p>
+          <div class="caption-title"></div><p>В этом случае тень помогает понять, что объект увеличился в размерах, а не изменил своё положение по высоте.</p>
         </figcaption>
                 </figure>
           </div>
@@ -449,7 +449,7 @@
   </div>
 </div>                  <div id="objects-in-3d-space-object-relationships" class="article qp-ui" data-qp-ui="{ 'ScrollSpy': {} }">
   <h2 class="article-title qp-ui" data-qp-ui="{ 'ResponsiveZippy': {} }">
-    Object relationships
+    Отношения между объектами
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="icon icon-expand-collapse" role="img" viewBox="0 0 10 10" aria-labelledby="title desc">
       <title id="title">Expand and collapse content</title>
       <desc id="desc">An arrow that points down when collapsed and points up when expanded.</desc>
@@ -461,7 +461,7 @@
                   <div>
           <section class="moduleE1">
     <div class="module-body">
-    <p>How you organize objects in an app determines how objects or collections of objects move in relation to one another. Objects can move independently of each other, or their movement can be constrained to, and dependent upon, their container. Containers and the objects they contain have a parent-child relationship. Every object has a single parent, and may or may not have one or more children.</p><p>Children inherit transformation properties from their parent, such as position, rotation, scale, and elevation. For example, in the case of a scrolling card collection where all cards move together, the cards are siblings and they are all children of the card collection container that handles the scrolling movement.</p><p>The hierarchy of parents and children determines how objects and groups of objects interact with one another. For example, child objects have minimal z-axis separation from their parent; other objects do not get inserted between parents and children. </p>
+    <p>Организация объектов в приложении определяет то, как объекты или группы объектов будут двигаться относительно друг друга. Объекты могут двигаться независимо друг от друга, или их движение будет определено и подчинено контейнеру в котором они находятся. Контейнеры и объекты, которые они содержат имеют отношения сравни родителю и потомку. Каждый объект имеет одного родителя, а так же может содержать одного и нескольких потомков, или не иметь их вовсе.</p><p>Дети перенимают преобразования от родителей, такие как позиция, вращение, масштаб, и положение по высоте. Например в случае с коллекцией карточек, в которой группа карточек пролистывается вместе, эти карточки дети одного родительского контейнера, который задаёт движение.</p><p>Структура родителей и потомков определяет взаимодействие объектов и групп объектов. Например потомки имеют минимальную разницу в вертикальном положении между ними и их родителем; остальные объекты не могут быть помещены между потомком и родителем.</p>
   </div>
   <div class="figure-group">
     <div class="figure-row">
@@ -470,7 +470,7 @@
                       <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7RDVQb2FiUExTUjQ/whatismaterial_3d_relationship1.png" />
                     </div>
                         <figcaption>
-          <div class="caption-title"></div><p>The raised button (child) scrolls off screen as its parent content scrolls.</p>
+          <div class="caption-title"></div><p>Приподнятая кнопка (потомок) пролистывается вместе со всем содержимым своего родителя.</p>
         </figcaption>
               </figure>
             <figure class="">
@@ -478,7 +478,7 @@
                       <img src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7bUxFNWxtN2VnY2M/whatismaterial_3d_relationship2.png" />
                     </div>
                         <figcaption>
-          <div class="caption-title"></div><p>The cards (siblings, and children of the card collection) scroll off screen as the floating action button (its own parent) remains in place.</p>
+          <div class="caption-title"></div><p>Карточки (все соселние карточки и потомки карточек) пролистываются за экран, в то время как плавающая кнопка действия (со своим отдельным родителем) остаётся на месте.</p>
         </figcaption>
               </figure>
           </div>
@@ -498,10 +498,10 @@
     <div class="footer-L section-what-is-material">&nbsp;</div>
     <div class="footer-grid-L section-what-is-material">
             <a class="footer-text" href="material-properties.html">
-        <img class="arrow-L" alt="" src="../../../../material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
-        <span>Previous</span>
+        <img class="arrow-L" alt="" src="http://material-design.storage.googleapis.com/images/Arrow-left_24x24px.svg"/>
+        <span>Ранее</span>
         <div>
-                      Material properties
+                      Свойства Материи
                   </div>
       </a>
           </div>
@@ -509,10 +509,10 @@
     <div class="footer-R section-animation">&nbsp;</div>
     <div class="footer-grid-R section-animation">
             <a class="footer-text" href="../animation/authentic-motion.html">
-        <img class="arrow-L" alt="" src="../../../../material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
-        <span>Next</span>
+        <img class="arrow-L" alt="" src="http://material-design.storage.googleapis.com/images/Arrow-right_24x24px.svg"/>
+        <span>Далее</span>
         <div>
-                      Animation
+                      Анимация
                   </div>
       </a>
           </div>
@@ -520,7 +520,7 @@
   </div>
 </footer>
     <script src="http://www.gstatic.com/external_hosted/picturefill/picturefill.min.js"></script>
-    <script src="../static/js/main.js"></script>
+    <script src="http://google.com/design/spec/static/js/main.js"></script>
 
 
   </body>
